@@ -1,0 +1,53 @@
+
+
+body {
+    position: relative;
+    text-align: center;
+
+}
+
+#titleblock{
+    font-weight:bold;
+    margin: 0 auto;
+    padding: 50px 50px 10px;
+    background-color:lightblue;
+    position:relative;
+    width:80%;
+    top: 0;
+    left:0;
+    font-family:sans-serif;
+    font-size: 40px;
+    color:#708090;
+}
+
+.inputdiv{
+    background-color: slategray;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.input{
+   font-family:sans-serif;
+}
+
+textarea{
+    margin: 25px 25px 25px;
+    height:200px;
+    width:400px;
+}
+
+p{
+    font-family:sans-serif;
+    font-size: 14px;
+}
+
+span.warn{
+    color: red;
+}
+
+.container{
+    height:200px;
+    width:90%;
+    background-color: darkgrey;
+    margin: 0 auto;
+}
