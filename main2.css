@@ -3,25 +3,33 @@
 body {
     position: relative;
     text-align: center;
+    background-color: floralwhite;
+    font-family: Georgia, serif;
 
 }
 
-#titleblock{
-    font-weight:bold;
+#titleblock {
     margin: 0 auto;
-    padding: 50px 50px 10px;
-    background-color:lightblue;
-    position:relative;
-    width:80%;
+    padding: 3px 0 6px;
+    background-color: cadetblue;
+    position: relative;
+    width: 99%;
     top: 0;
-    left:0;
-    font-family:sans-serif;
+    left: 0;
+}
+
+h1{
+    /*font-family:sans-serif;*/
+    font-weight: bold;
     font-size: 40px;
-    color:#708090;
+    color: rgba(10, 10, 10, 0.13);
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name:fadein;
+    margin: 0;
 }
 
 .inputdiv{
-    background-color: slategray;
+    background-color: gainsboro;
     width: 92%;
     margin: 0 auto;
 }
@@ -34,11 +42,15 @@ textarea{
     margin: 25px 25px 25px;
     height:200px;
     width:400px;
+    background-color: ghostwhite;
 }
 
 p{
-    font-family:sans-serif;
-    font-size: 14px;
+    font-family: Georgia;
+    font-size: 19px;
+    width: 403px;
+    text-align: center;
+    margin: auto;
 }
 
 span.warn{
@@ -48,6 +60,32 @@ span.warn{
 .container{
     height:200px;
     width:90%;
-    background-color: darkgrey;
+    background-color: antiquewhite;
     margin: 0 auto;
 }
+
+#chars{
+    font-size: 10px;
+    color: darkgray;
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+        /*width: 200%;*/
+    }
+
+    100% {
+        opacity: 100;
+        /*margin-top: 0;*/
+        /*width: 100%;*/
+    }
+}
+
+/*-webkit-animation-iteration-count: 1;*/
+/*-webkit-animation-direction:normal;*/
+/*-webkit-animation-name: outofthepark;*/
+/*-webkit-animation-delay: 0s;*/
+/*-webkit-animation-timing-function: ease-in-out;*/
+/*-webkit-animation-duration:3s;*/
+/*-webkit-animation-fill-mode: forwards;*/

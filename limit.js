@@ -4,22 +4,27 @@
 $(document).ready(function() {
 
         var submit = $('button');
-        var maxChars = 300;
-        var inputBox = $('#usertext')//.val();
+        var maxChars = 500;
+        var inputBox = $('#usertext');
         var count =$('#count');
         var msg = $('#msg');
         var board = [];
+        var str = "";
 
-        inputBox.on('keyup', checkAndUpdateCount);
+        inputBox.on('keyup',function(){
+            checkAndUpdateCount();
+        });
         //registering event
 
         checkAndUpdateCount();
 
-        submit.on('click',transmogrify);
-            console.log('yay');
+        submit.on('click',function(){
+           distill();
+
+        });
             //it printed yay before i clicked.
 
-        $('.container').append([board]);
+        //$('.container').append(board);
 
     function checkAndUpdateCount(event){
             var currentText = inputBox.val();
@@ -44,19 +49,39 @@ $(document).ready(function() {
     });
 
 
-    function transmogrify(inputBox){
+    function distill(inputBox){
+            //console.log('yay');
+
             var input = [];
-            inputs = $('#usertext').val();
-            input = inputs.trim().split[" "];
+            inputs = $('textarea').val();
+            console.log(inputs);
+            input = inputs.split([" "],[33]);
+            console.log(input);
             var words = _.shuffle(input);
             // _.each(words, sampleWords);
+            console.log(words);
 
-            //var board = [];
-
+            var board = [];
+//TODO break on fullstop
             board = _.sample(words,[33]);
+            (console.log(board));
+            //return board;
 
-            return board;
+            var disstring = board.join(" ").toLowerCase();
+            (console.log(disstring));
+            //return disstring;
+            $('.container').append("<p id='msg'>" + disstring + "</p>");
+            console.log('what');
     }
+1
+
+//function makeRow(record){
+//    return "<tr data-id='"+ record.ts +"'>" +
+//        "<td>" + record.name + "</td>" +
+//        "<td>" + record.email + "</td>" +
+//        "<td><button class='remove btn btn-primary btn-xs'>remove</button></td>" +
+//        "</tr>";
+
 
           //  msg.text(transmogrify(inputBox));
 
@@ -96,3 +121,19 @@ $(document).ready(function() {
 
 //console.log(findLongestWord("do the conversions first"));
 
+//function transmogrify(inputBox){
+//    console.log('yay');
+//
+//    var input = [];
+//    inputs = $('textarea').val();
+//    input = inputs.trim().split[" "];
+//    var words = _.shuffle(input);
+//    // _.each(words, sampleWords); ==>empty array
+//    console.log(words);
+//
+//    var board = [];
+//
+//    board = _.sample(words,[33]);
+//    (console.log(board)); ==> empty array
+//    return board;
+//}
