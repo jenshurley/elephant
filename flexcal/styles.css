@@ -1,0 +1,98 @@
+
+
+body {
+    position:relative;
+    background-color:floralwhite;
+    font-family: 'Open Sans', sans-serif;
+    color: darkgrey;
+}
+.month{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.frame {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content:  flex-start;
+    height: 600px;
+}
+
+.box {
+    background-color: #25aa99;
+    display: flex;
+    flex-direction: column;
+    /*flex: 5;*/
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 1px dotted gray;
+    color: #eeeeee ;
+}
+
+/*.day{*/
+    /*background-color: #25aa99;*/
+    /*width: 400px;*/
+    /*padding: 10px;*/
+    /*margin: 10px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*height: 500px;*/
+    /*flex: 7;*/
+/*}*/
+
+/*.cell{*/
+    /*height: 100px;*/
+    /*width: 100%;*/
+    /*border: 1px dotted gray;*/
+
+.col {
+    display: flex;
+    flex-direction: column;
+    /*flex:7 ;*/
+    min-width: 100px;
+}
+
+.moonPhase {
+    width: 95px;
+    height: 95px;
+    border-radius: 50px;
+    background-color: blueviolet;
+
+}
+
+
+.baselayer {
+    width: 800px;
+    height: 1000px;
+    background-image: url("images/book-of-hours-lunar-and-weekly-1.gif");
+    background-repeat: no-repeat;
+    position:relative;
+    z-index: 1;
+}
+
+/*There is no CSS property background-opacity, but you can fake it by inserting a pseudo element with regular opacity the exact size of the element behind it.*/
+
+
+
+.wrapper {
+    background-color: rgba(0,0,0,.2);
+    z-index: 5;
+    position: relative;
+    height: 1000px;
+    width: 800px;
+}
+/*div::after {*/
+    /*content: "";*/
+    /*background: url("images/book-of-hours-lunar-and-weekly-1.gif");*/
+    /*opacity: 0.5;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*position: absolute;*/
+    /*z-index: -1;*/
+/*}*/
+/*http://css-tricks.com/snippets/css/transparent-background-images/*/

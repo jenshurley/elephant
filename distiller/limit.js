@@ -75,6 +75,8 @@ $(document).ready(function() {
     }
 1
 
+//TODO add seample text (fillerama API) and choice of functions and better design
+
 //function makeRow(record){
 //    return "<tr data-id='"+ record.ts +"'>" +
 //        "<td>" + record.name + "</td>" +
