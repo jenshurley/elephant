@@ -1,0 +1,65 @@
+//TEXT SELECTIONS
+var x = ['weeds', 'handles', 'sinks', 'table', 'desk'];//or a JSON object
+var data = "clean.txt";
+
+$(document).ready(function() {
+
+
+    //for each well, choose a random array item with no replacement]
+
+    getRandomTask(x).renderWell();
+
+});
+
+    function getRandomTask(x) {
+        var min = 0;//i know. not how you do this.
+        var max = data.length - 1;
+        var randomIndex = Math.floor((Math.random() * (max - min)) + min);
+            console.log(randomIndex);
+        var task  = x[randomIndex]
+
+        return task;
+            console.log(task);
+    };
+
+    function renderWell(string) {
+        //$('.well1').append("<p id='msg'>" + randomTask + "</p>");
+
+
+        console.log('render well');
+        var html;
+
+        html = "<h3>Do this</h3>";
+
+
+        data.forEach(function (employee, index) {
+
+            html += "<tr>";
+            html += "<td>" + employee.name + "</td>";
+            html += "<td>" + employee.phone + "</td>";
+            html += "<td>" + employee.address + "</td>";
+            html += "<td><button type='button' class='btn btn-default btn-sm delete' index='" + index + "'>Del</button></td>";
+            html += "<td><button type='button' class='btn btn-default btn-sm edit' index='" + index + "'>Edit</button></td>";
+            html += "<td><button type='button' class='btn btn-default btn-sm map' index='" + index + "'>Map</button></td>";
+            html += "</tr>";
+        })
+
+
+        html += "</table>";
+
+        $("#employee_list").html(html);
+    };
+
+
+
+//TODO delay before populating each well
+//
+//$('button').on ("click", function(){
+//    $('.choose_task').toggleClass('.CHANGEME');
+//    $('button').text ("x[1]")
+//}
+//}()
+
+//function getRandomTask(data){
+//    var shuffled = _.shuffle(data);
+//
