@@ -1,4 +1,4 @@
-<!--//a page that presents 3 options using flexbox? wells and grid?-->
+<!--//a page that presents 3 options using bootstrap wells-->
 
 <!doctype html>
     <html>
@@ -25,20 +25,21 @@
         </head>
 
         <body>
-            <h1>Choose [insert to DOM]</h1>
-           <div class="container">
+            <h1>Choose Task</h1>
+            <!--<button type="button" class="tasks btn btn-primary">Tasks</button>-->
+            <div class="container">
                <div class="row">
 
                    <div class="col-md-4" class="option1">Option 1
-                        <div class="well well-lg" class="well1"><p id="msg1"></p></div>
+                        <div class="well well-lg" class="well1"><p class="msg1"></p></div>
                    </div>
 
                    <div class="col-md-4" class="option2">Option 2
-                        <div class="well well-lg" class="well2"><p id="msg2"></p></div>
+                        <div class="well well-lg" class="well2"><p class="msg2"></p></div>
                    </div>
 
                    <div class="col-md-4" class="option3">Option 3
-                        <div class="well well-lg" class="well3"><p id="msg2"></p></div>
+                        <div class="well well-lg" class="well3"><p class="msg3"></p></div>
                    </div>
                </div>
 
@@ -46,6 +47,7 @@
 
             <script type="text/javascript"  src="https://code.jquery.com/jquery-2.1.1.js"></script>
             <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>-->
+            <script type="text/javascript" src="clean-tasks.js"></script>
             <script type="text/javascript" src="options.js"></script>
 
         </body>

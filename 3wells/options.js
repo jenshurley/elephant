@@ -1,14 +1,40 @@
 //TEXT SELECTIONS
-//for each well, choose a random array item with no replacement]
+//for each well, choose a different random array item (no replacement)]
 
+//var data = ['weeds', 'handles', 'sinks', 'table', 'desk'];
 
 
 $(document).ready(function() {
-    //var randomTask = getRandomTask();
-    //var wells = [1,2,3];
-    var data = ['weeds', 'handles', 'sinks', 'table', 'desk'];
+    //var myTask = getRandomTask();
+    //var wells = $('.well');
+    //var data = ['weeds', 'handles', 'sinks', 'table', 'desk'];
 
-    getRandomTask(data);
+    //$('.well').each(function(index, element){
+    //    getRandomTask(data);
+    //
+    //});
+
+    //$('.tasks').click(function(){
+    //    console.log('clicked');
+    //    $('.msg1').append(getRandomTask(data));
+    //    //$('.msg1' '.msg2' '.msg3').append(getRandomTask(data));
+    //    //$('.msg2').getRandomTask(data);
+    //    //$('.msg3').getRandomTask(data);
+    //});
+
+    //function (){
+        //var data = ['weeds', 'handles', 'sinks', 'table', 'desk'];
+        var wells = $('.well');
+
+        wells.each(function(){
+            $(this).text(getRandomTask(data))
+            });
+
+
+    //$(wells).each(function(){
+    //    getRandomTask(data)
+    //});
+
 
     function getRandomTask() {
         var min = 0;//i know. not how you do this.
@@ -18,10 +44,10 @@ $(document).ready(function() {
             console.log(randomIndex);
         var task = data[randomIndex];
 
-        //return task;
             console.log(task);
+        return task;
 
-        $("#msg1").append(task);
+        //$(".msg").append(task);
 
     };
 
@@ -42,12 +68,13 @@ $(document).ready(function() {
 //        }
 //    }
 //
-//    forEach (wells){
-//        $("#msg1").append(randomTask);
-//        $("#msg2").append(randomTask);
-//        $("#msg3").append(randomTask);
-//    });
-//
+//    $.each(wells, getRandomTask(data);
+//{
+    //    $("#msg1").append(randomTask);
+    //    $("#msg2").append(randomTask);
+    //    $("#msg3").append(randomTask);
+    //});
+
 //});
 //
 //};
