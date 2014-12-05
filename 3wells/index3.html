@@ -4,29 +4,69 @@
     <html>
         <head>
 
+            <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
 
+            <!--//TODO add white buttons for different tasks-->
+            <!--//TODO - put all this in a div make small and perimeter gray out-->
 
             <style>
             body {margin: auto;
-                  background-color: honeydew;
+                  background-color: rgb(250, 250, 250);
+                color: #ffffff;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            h1{
+                font-size: 45px;
+            }
+            .appbar{
+                height: 300px;
+                background-color: #00BCD4;
+            }
+
+            #title{
+                margin-top: 0;
+                padding-top: 200px;
+                padding-left: 160px;
             }
             .well {
-                border: 10px solid dimgrey;
+                border: 10px solid ghostwhite;
                 font-size: 30px;
-                background: azure;
+                background: #e0f7fa;
+                color: rgba(0,0,0,.54);
             }
+                /*todo - these need shadows*/
+            .circle{
+                width: 64px;
+                height: 64px;
+                background-color: #009688;
+                margin-left: 45px;
+                border-radius: 32px;
+            }
+            .row{
+                margin-left: -15px;
+            }
+
             .container{
-                margin: 20px;
+                margin: 64px 134px;
             }
         </style>
 
         </head>
 
         <body>
-            <h1>Choose Task</h1>
+            <div class="appbar">
+
+                <h1 id="title">Choose Task</h1>
+
+                <div class="circle"></div>
+
             <!--<button type="button" class="tasks btn btn-primary">Tasks</button>-->
+              <!--//TODO add other lists, load on click-->
+            <!--//TODO add input box, make non exe, allow it to be randomized-->
+            </div>
             <div class="container">
                <div class="row">
 
@@ -46,7 +86,7 @@
            </div>
 
             <script type="text/javascript"  src="https://code.jquery.com/jquery-2.1.1.js"></script>
-            <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>-->
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
             <script type="text/javascript" src="clean-tasks.js"></script>
             <script type="text/javascript" src="options.js"></script>
 
