@@ -8,51 +8,8 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
 
-            <!--//TODO add white buttons for different tasks-->
-            <!--//TODO - put all this in a div make small and perimeter gray out-->
-
-            <style>
-            body {margin: auto;
-                  background-color: rgb(250, 250, 250);
-                color: #ffffff;
-                font-family: 'Roboto', sans-serif;
-            }
-
-            h1{
-                font-size: 45px;
-            }
-            .appbar{
-                height: 300px;
-                background-color: #00BCD4;
-            }
-
-            #title{
-                margin-top: 0;
-                padding-top: 200px;
-                padding-left: 160px;
-            }
-            .well {
-                border: 10px solid ghostwhite;
-                font-size: 30px;
-                background: #e0f7fa;
-                color: rgba(0,0,0,.54);
-            }
-                /*todo - these need shadows*/
-            .circle{
-                width: 64px;
-                height: 64px;
-                background-color: #009688;
-                margin-left: 45px;
-                border-radius: 32px;
-            }
-            .row{
-                margin-left: -15px;
-            }
-
-            .container{
-                margin: 64px 134px;
-            }
-        </style>
+            <link rel="stylesheet" type="text/css" href="main.css">
+            <!--//TODO add  buttons then tooltips for different tasks-->
 
         </head>
 
@@ -63,22 +20,32 @@
 
                 <div class="circle"></div>
 
-            <!--<button type="button" class="tasks btn btn-primary">Tasks</button>-->
-              <!--//TODO add other lists, load on click-->
-            <!--//TODO add input box, make non exe, allow it to be randomized-->
-            </div>
-            <div class="container">
-               <div class="row">
 
-                   <div class="col-md-4" class="option1">Option 1
+            <!--<button type="button" class="tasks btn btn-primary">Tasks</button>-->
+              <!--//TODO add other lists, load on click, buttons on go away after click
+            <!--//TODO add input box, make non exe, all-->ow it to be randomized-->
+            </div>
+
+
+
+            <div class="container">
+
+               <div class="row">
+                   <div class="btn-group-vertical col-md-3" role="group" aria-label="...">
+                       <button type="button" class="btn btn-default">Clean</button>
+                       <button type="button" class="btn btn-default">Make</button>
+                       <button type="button" class="btn btn-default">Open</button>
+                   </div>
+
+                   <div class="col-md-3" class="option1">Option 1
                         <div class="well well-lg" class="well1"><p class="msg1"></p></div>
                    </div>
 
-                   <div class="col-md-4" class="option2">Option 2
+                   <div class="col-md-3" class="option2">Option 2
                         <div class="well well-lg" class="well2"><p class="msg2"></p></div>
                    </div>
 
-                   <div class="col-md-4" class="option3">Option 3
+                   <div class="col-md-3" class="option3">Option 3
                         <div class="well well-lg" class="well3"><p class="msg3"></p></div>
                    </div>
                </div>
