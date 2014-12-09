@@ -1,0 +1,53 @@
+body {margin: auto;
+    background-color: rgb(250, 250, 250);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 45px;
+}
+.appbar{
+    height: 300px;
+    background-color: #00BCD4;
+}
+
+#title{
+    margin-top: 0;
+    padding-top: 200px;
+    padding-left: 160px;
+}
+
+.btn-group, .btn-group-vertical {
+    width: 166px;
+}
+/*.nav {*/
+    /*background-color: black;*/
+    /*margin: 0px 0px;*/
+    /*width: 100px;*/
+/*}*/
+
+.well {
+    border: 10px solid ghostwhite;
+    font-size: 30px;
+    background: #e0f7fa;
+    color: rgba(0,0,0,.54);
+}
+/*todo - these need shadows*/
+
+.circle{
+    width: 64px;
+    height: 64px;
+    background-color: #009688;
+    margin-left: 45px;
+    border-radius: 32px;
+}
+/*.row{*/
+    /*margin-left: -15px;*/
+/*}*/
+
+.container{
+    margin: 64px -14px;
+
+}
+
