@@ -13,8 +13,7 @@ $(document).ready(function() {
         //submit.on('click',function(){
         //    getRandomTask();
         //
-    //todo reset button
-
+    //todo access different arrays?
 
 
     function getRandomTask() {
@@ -32,19 +31,5 @@ $(document).ready(function() {
     };
 
 
-    //function getRandomTask() {
-    //    var min = 0;
-    //    var max = data.length - 1;
-    //        console.log(max);
-    //    var randomIndex = Math.floor((Math.random() * (max - min)) + min);
-    //        console.log(randomIndex);
-    //    var task = data[randomIndex];
-    //
-    //        console.log(task);
-    //    return task;
-
-        //$(".msg").append(task);
-
-    //};
 
 });
