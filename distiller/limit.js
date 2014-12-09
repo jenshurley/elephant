@@ -62,6 +62,7 @@ $(document).ready(function() {
             console.log(words);
 
             var board = [];
+
 //TODO break on fullstop
             board = _.sample(words,[33]);
             (console.log(board));
