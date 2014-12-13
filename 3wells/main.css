@@ -50,3 +50,14 @@ h1{
     margin: 64px -14px;
 
 }
+
+
+#tableContainer {
+    position: relative;
+    margin: 100px 168px;
+    color: #333333;
+}
+
+input, button {
+    color: #333333;
+}

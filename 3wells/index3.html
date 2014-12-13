@@ -16,14 +16,15 @@
         <body>
             <div class="appbar">
 
-                <h1 id="title">Choose Task</h1>
+                <h1 id="title">Choose List <span id="listChoice"></span></h1>
+                <!--todo add "choose task|project|project|new items" dep on selection-->
 
                 <div class="circle"></div>
 
 
             <!--<button type="button" class="tasks btn btn-primary">Tasks</button>-->
               <!--//TODO add other lists, load on click, buttons on go away after click
-            <!--//TODO add input box, make non exe, all-->ow it to be randomized-->
+            <!--//TODO show input box onclick.  make non exe-->
             </div>
 
 
@@ -35,6 +36,7 @@
                        <button type="button" class="btn btn-default" id="clean">Clean</button>
                        <button type="button" class="btn btn-default" id="make">Make</button>
                        <button type="button" class="btn btn-default" id="open">Open</button>
+                       <button type="button" class="btn btn-default" id="add">Add New</button>
                    </div>
 
                    <div class="col-md-3" class="option1">Option 1
@@ -52,7 +54,27 @@
 
                 <!--<button type="button" class="btn btn-default" id="reset">Reset</button>-->
 
+
            </div>
+
+            <div id="tableContainer">
+                <table id="lists" class="table table-striped table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th>List Name</th>
+                        <th>Item</th>
+                        <th>&nbsp</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <td><input type="text" id="listName"/></td>
+                        <td><input type="text" id="item"/></td>
+                        <td><button id="save">Save</button></td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
 
             <script type="text/javascript"  src="https://code.jquery.com/jquery-2.1.1.js"></script>
             <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
